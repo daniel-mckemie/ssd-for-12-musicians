@@ -1,0 +1,148 @@
+body {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.instructions {
+  width: 75%;
+  margin-left: 5%;
+}
+
+.all-players {
+}
+
+#player1 {
+  background-color: red;
+  height: 33vh;
+  width: 25vw;
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  visibility: hidden;
+}
+
+#player2 {
+  background-color: orange;
+  height: 33vh;
+  width: 25vw;
+  top: 0%;
+  left: 25%;
+  position: absolute;
+  visibility: hidden;
+}
+
+#player3 {
+  background-color: yellow;
+  height: 33vh;
+  width: 25vw;
+  top: 0%;
+  left: 50%;
+  position: absolute;
+  visibility: hidden;
+}
+
+#player4 {
+  background-color: green;
+  height: 33vh;
+  width: 25vw;
+  top: 0%;
+  left: 75%;
+  position: absolute;
+  visibility: hidden;
+}
+
+#player5 {
+  background-color: blue;
+  height: 33vh;
+  width: 25vw;
+  top: 33%;
+  left: 0%;
+  position: absolute;
+  visibility: hidden;
+}
+
+#player6 {
+  background-color: indigo;
+  height: 33vh;
+  width: 25vw;
+  top: 33%;
+  left: 25%;
+  position: absolute;
+  visibility: hidden;
+}
+
+#player7 {
+  background-color: violet;
+  height: 33vh;
+  width: 25vw;
+  top: 33%;
+  left: 50%;
+  position: absolute;
+  visibility: hidden;
+}
+
+#player8 {
+  background-color: gray;
+  height: 33vh;
+  width: 25vw;
+  top: 33%;
+  left: 75%;
+  position: absolute;
+  visibility: hidden;
+}
+
+#player9 {
+  background-color: teal;
+  height: 33vh;
+  width: 25vw;
+  top: 66%;
+  left: 0%;
+  position: absolute;
+  visibility: hidden;
+}
+
+#player10 {
+  background-color: pink;
+  height: 33vh;
+  width: 25vw;
+  top: 66%;
+  left: 25%;
+  position: absolute;
+  visibility: hidden;
+}
+
+#player11 {
+  background-color: gold;
+  height: 33vh;
+  width: 25vw;
+  top: 66%;
+  left: 50%;
+  position: absolute;
+  visibility: hidden;
+}
+
+#player12 {
+  background-color: silver;
+  height: 33vh;
+  width: 25vw;
+  top: 66%;
+  left: 75%;
+  position: absolute;
+  visibility: hidden;
+}
+
+/* @keyframes snare {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */

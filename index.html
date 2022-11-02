@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SSD for 12 players of any instrumentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="./animated-scores/seaswell/style.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="instructions">
+        <h4>Instructions</h4>
+        <ul>
+          <li>
+            <i><b>SSD</b></i> is written for 12 performers of any
+            instrumentation. Each player is assigned one square on the screen
+            and all read from the same screen that is projected in the space.
+            Player 1 is the top-left most square, with Player 2 being the bar to
+            the immediate right of that, and so on for each player like the
+            direction of reading a book. The players can all be placed in one
+            central place on stage, or throughout the concert space.
+          </li>
+          <li>
+            The score follows these rules:            
+              <li>
+                The piece is for any instrument of any type. Players are to stay
+                in their square.
+              </li>
+              <li>
+                Players circulate between three distinct actions that appear in
+                their square, they are:<br />
+                - SAME<br />
+                - SIMILAR<br />
+                - DIFFERENT<br />
+              </li>
+              <li>
+                The context of the current action is based on the performed
+                action that preceded it. For example, if a piano plays a Middle
+                C at forte, and an indication of
+                <b>"SAME"</b> appears, then that player does the
+                <b>SAME</b> thing. If a <b>"SIMILAR"</b> action is assigned,
+                that could be something like a G above Middle C at <i>forte</i>,
+                or Middle C at <i>mezzo-piano</i>. While a
+                <b>"DIFFERENT"</b> action could be a chromatic run up and down
+                the piano.
+              </li>
+              <li>
+                Players circulate between SAME/SIMILAR/DIFFERENT. And it is
+                encouraged that all performers meditate on this idea of context
+                within their instrument.
+              </li>
+              <li>
+                As the action assignments circulate, players can carry over
+                actions or continue an action that is in progress until they
+                wish to stop, temporarily ignoring the score and/or more
+                seamlessly blending actions together. For example, if a
+                violinist is sustaining on an open A string, they may keep that
+                action in effect overlapping the next assigned action, even if
+                it is <b>"DIFFERENT"</b>, and they can either go into something
+                different, or choose to keep sustaining; as it is a continuous
+                action.
+              </li>
+              <li>
+                Additionally, players may opt for silence during an assigned
+                action, but should only choose this if the context of
+                <b>"DIFFERENT"</b> applies. For example, if a piano player plays
+                Middle C at <i>forte</i>, they can stay silent if the next
+                action indicated is <b>"DIFFERENT"</b>. If they choose this
+                path, and the next action is <b>"SAME"</b>, then the silence
+                remains.
+              </li>
+            
+          </li>
+        </ul>
+        <!-- <p>Dedicated to my friend Ryan Ross Smith for paving a big part of this path and inspiring me to FINALLY write an animated score!</p> -->
+        <p>There is a 20 second pause before the piece begins...</p>
+        <button onclick="startPiece()">START</button>
+      </div>
+      <div class="all-players" id="player1"></div>
+      <div class="all-players" id="player2"></div>
+      <div class="all-players" id="player3"></div>
+      <div class="all-players" id="player4"></div>
+      <div class="all-players" id="player5"></div>
+      <div class="all-players" id="player6"></div>
+      <div class="all-players" id="player7"></div>
+      <div class="all-players" id="player8"></div>
+      <div class="all-players" id="player9"></div>
+      <div class="all-players" id="player10"></div>
+      <div class="all-players" id="player11"></div>
+      <div class="all-players" id="player12"></div>
+    </div>
+    <!-- <script src="./animated-scores/seaswell/main.js"></script> -->
+    <script src="./main.js"></script>
+  </body>
+</html>
