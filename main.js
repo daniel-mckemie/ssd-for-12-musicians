@@ -13,12 +13,64 @@ function startPiece() {
     const player11 = document.querySelector('#player11');
     const player12 = document.querySelector('#player12');
 
+    const allPlayersText = document.querySelectorAll('.all-players-text');
+
     const instructionsDiv = document.querySelector('.instructions');
     instructionsDiv.remove();
 
-    for (i = 0; i < allPlayers.length; i++) {
-        allPlayers[i].style.visibility = 'visible';
+
+
+    const actions = ['SAME', 'SIMILAR', 'DIFFERENT'];
+
+
+    function fadeIn(element) {
+        var op = 0.1; // initial opacity
+        element.style.display = 'block';
+        var timer = setInterval(function () {
+            if (op >= 1) {
+                clearInterval(timer);
+            }
+            element.style.opacity = op;
+            element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op += op * 0.1;
+        }, 10);
     }
+
+    function fadeOut(element) {
+        var op = 1; // initial opacity
+        var timer = setInterval(function () {
+            if (op <= 0.1) {
+                clearInterval(timer);
+                element.style.display = 'none';
+            }
+            element.style.opacity = op;
+            element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op -= op * 0.1;
+        }, 10);
+    }
+
+    for (let i = 0; i < allPlayers.length; i++) {
+        allPlayers[i].style.visibility = 'visible';
+        allPlayersText[i].innerHTML = 'BEGIN';
+        setTimeout(() => {
+            fadeOut(allPlayersText[i]);
+        }, 9000);
+    }
+
+
+    setInterval(() => {
+        for (let i = 0; i < allPlayersText.length; i++) {
+            let randomAction = Math.floor(Math.random() * 3);
+            allPlayersText[i].innerHTML = actions[randomAction];
+            fadeIn(allPlayersText[i]);
+            setTimeout(() => {
+                fadeOut(allPlayersText[i]);
+            }, 9000);
+        }
+
+    }, 11000);
+
+
 
 
 }
